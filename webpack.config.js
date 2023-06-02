@@ -6,7 +6,15 @@ module.exports = {
     path : path.resolve(__dirname, 'dist'),
     filename : "bundle.js"
   },
-  // module : [ {
-
-  // }]
+  // 특정 파일에 대한 변환, 처리 작업 수행
+  module : [ {
+    // 로더를 적용할 파일 형식
+    test : /\.js$/,
+    use : {
+      loader : 'babel-loader',
+      options : {
+        presets : ['@babel/preset-env'],
+      },
+    }
+  }],
 }
