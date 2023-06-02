@@ -1,4 +1,4 @@
 {
   // JSX 문법, ES5 문법 지원
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"]
 }
