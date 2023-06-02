@@ -1,7 +1,8 @@
-import express from "express";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // 있다가 root경로를 지정해주기 위한 path 모듈
-import path from "path";
-console.log("빌드 경로 입니다"+path.join(__dirname,'build'))
+var path_1 = require("path");
+console.log("root 경로 입니다" + path_1.default.join(__dirname, 'build'));
 // const app = express();
 // // 미들웨어 -> root
 // app.use(express.static(__dirname));
